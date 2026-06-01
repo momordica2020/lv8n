@@ -1,0 +1,74 @@
+/* CSS Document */
+body{
+	margin:0 auto;
+	padding: 0px;
+	font-size: 12px;
+	color: #fff;
+	line-height: 170%;
+	text-align:center;
+	font-family: 'verdana', 'Lucida Sans Unicode', 'sans-serif';
+	background-image:url('../images/main_bg.gif');
+
+}
+
+.main_top{
+padding-top:69px;
+}
+.main_middle{
+padding-top:100px;
+
+}
+
+.main_index{
+	position:absolute;
+	left: 391px;
+	top: 359px;
+}
+.main_bbs{
+	position:absolute;
+	left: 620px;
+	top: 341px;
+}
+.main_down{
+	position:absolute;
+	left: 190px;
+	top: 326px;
+}
+.main_footer{
+padding-top:40px;
+}
+
+
+.top{
+height:72px;
+background-color:#009966;
+}
+
+
+
+/*link style*/
+
+.clink  a:visited{COLOR:#fff;TEXT-DECORATION: none;}
+.clink  a:hover{COLOR:#00F;TEXT-DECORATION: underline;}
+
+/*
+     FILE ARCHIVED ON 00:55:27 May 04, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:44:38 Jun 01, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 2.64
+  captures_list: 0.498
+  exclusion.robots: 0.043
+  exclusion.robots.policy: 0.035
+  esindex: 0.01
+  cdx.remote: 6.256
+  LoadShardBlock: 203.206 (3)
+  PetaboxLoader3.resolve: 223.125 (5)
+  PetaboxLoader3.datanode: 155.926 (5)
+  load_resource: 232.099 (2)
+*/

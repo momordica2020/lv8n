@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <style>
+        /* 清除默认样式，确保全屏填充 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            overflow: hidden; /* 防止出现滚动条 */
+        }
+
+		/* 背景图容器 */
+		.background-container {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image:url('./images/background.jpg'); 
+			background-size: cover;       
+			background-position: center;   
+			background-repeat: no-repeat;  
+			z-index: -1;                  
+		}
+
+        /* 遮罩层，让背景图暗一点，突显前方文字 */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3); /* 30% 黑色透明度 */
+            z-index: 0;
+        }
+
+        /* 前端内容居中容器 */
+        .content-wrapper {
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center;     /* 垂直居中 */
+            padding: 20px;
+        }
+
+        /* 个人主页卡片 */
+        .profile-card {
+            background: rgba(255, 255, 255, 0.15); /* 毛玻璃半透明底色 */
+            backdrop-filter: blur(10px);           /* 毛玻璃模糊效果 */
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 40px 50px;
+            border-radius: 16px;
+            width: 100%;
+            max-width: 400px;                      /* 限制最大宽度 */
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        /* 头像（可选） */
+        .avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #fff;
+            object-fit: cover;
+        }
+
+        /* 主标题 */
+        .profile-card h1 {
+            color: #ffffff;
+            font-size: 24px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        /* 副标题/简介 */
+        .profile-card p {
+            color: #e0e0e0;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        /* 竖向列表容器 */
+        .link-list {
+            display: flex;
+            flex-direction: column; /* 竖向排列 */
+            gap: 15px;              /* 列表项之间的间距 */
+        }
+
+        /* 竖向列表中的每一项（按钮样式） */
+        .link-item {
+            display: block;
+            padding: 14px;
+            color: #ffffff;
+            text-decoration: none;  /* 去掉下划线 */
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease; /* 动画过渡效果 */
+            letter-spacing: 1px;
+        }
+
+        /* 鼠标悬停（Hover）效果 */
+        .link-item:hover {
+            background: #ffffff;
+            color: #333333;
+            transform: translateY(-2px); /* 微微上浮 */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-container"></div>
+    <div class="overlay"></div>
+
+    <div class="content-wrapper">
+        <div class="profile-card">
+            <img class="avatar" src="https://picsum.photos/100" alt="Avatar">
+            
+            <h1>绿坝娘同好会</h1>
+            <p>哼，河蟹你全家！</p>
+
+            <nav class="link-list">
+                <a href="https://greendam.icu" target="_blank" class="link-item">绿坝娘美图</a>
+                <a href="https://greendam.fandom.com/zh" target="_blank" class="link-item">绿坝娘维基</a>
+            </nav>
+        </div>
+    </div>
+
+</body>
+</html>
